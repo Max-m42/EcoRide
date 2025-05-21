@@ -11867,4 +11867,11 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+}
+
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
