@@ -11844,4 +11844,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  background-color: #F6F6F2;
 }/*# sourceMappingURL=main.css.map */
