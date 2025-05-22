@@ -11874,4 +11874,18 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer i:hover {
+  color: #3B7A57;
+  transform: rotate(10deg) scale(1.2);
 }/*# sourceMappingURL=main.css.map */

@@ -31,3 +31,18 @@ footer.footer{
     bottom: 0;
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer i:hover {
+  color: $secondary;
+  transform: rotate(10deg) scale(1.2);
+}
+
