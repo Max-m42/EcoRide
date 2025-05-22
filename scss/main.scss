@@ -1,10 +1,19 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import 'custom';
 
-body{
-    background-color: #F6F6F2;
+html {
+  height: 100%;
+  font-size: 18px;
 }
 
+body{
+  background-color: $offwhite;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// header
 .navbar-brand:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -25,24 +34,123 @@ body{
   box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
 }
 
-footer.footer{
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+// footer
+a {
+  text-decoration: none;
+  color: black;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-  }
-
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer i:hover {
   color: $secondary;
   transform: rotate(10deg) scale(1.2);
 }
+
+// page accueil
+.search-box {
+  background-color: $primary;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+.search-bar {
+  display: flex;
+  background-color: $offwhite;
+  border-radius: 12px;
+  align-items: center;
+  height: 60px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex: 1;
+  min-width: 0;
+  gap: 10px;
+  height: 100%;
+}
+
+.search-section i {
+  font-size: 1.2rem;
+}
+
+.search-section input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.short-separator {
+  height: 40px;
+  width: 1px;
+  background-color: black;
+}
+
+.date-group {
+  cursor: text;
+}
+
+.passenger-label {
+  margin: 0 10px;
+  cursor: default;
+  user-select: none;
+}
+
+.passenger-options {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: $offwhite; 
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+  max-height: 160px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.passenger-dropdown {
+  position: relative;
+}
+
+.passenger-option:hover {
+  color: $secondary;
+}
+
+.passenger-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.passenger-options::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+ 
+.btn-search-out {
+  flex: 1;
+  max-width: 60px;
+}
+
+.btn-search:hover {
+  background-color: #163e30;
+}
+
+
+
 

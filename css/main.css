@@ -11845,8 +11845,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  height: 100%;
+  font-size: 18px;
+}
+
 body {
   background-color: #F6F6F2;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand:hover {
@@ -11869,13 +11877,6 @@ body {
   box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
 }
 
-footer.footer {
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -11888,4 +11889,103 @@ footer a:hover {
 footer i:hover {
   color: #3B7A57;
   transform: rotate(10deg) scale(1.2);
+}
+
+.search-box {
+  background-color: #A9D8B8;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #F6F6F2;
+  border-radius: 12px;
+  align-items: center;
+  height: 60px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex: 1;
+  min-width: 0;
+  gap: 10px;
+  height: 100%;
+}
+
+.search-section i {
+  font-size: 1.2rem;
+}
+
+.search-section input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.short-separator {
+  height: 40px;
+  width: 1px;
+  background-color: black;
+}
+
+.date-group {
+  cursor: text;
+}
+
+.passenger-label {
+  margin: 0 10px;
+  cursor: default;
+  user-select: none;
+}
+
+.passenger-options {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: #F6F6F2;
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+  max-height: 160px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.passenger-dropdown {
+  position: relative;
+}
+
+.passenger-option:hover {
+  color: #3B7A57;
+}
+
+.passenger-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.passenger-options::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.btn-search-out {
+  flex: 1;
+  max-width: 60px;
+}
+
+.btn-search:hover {
+  background-color: #163e30;
 }/*# sourceMappingURL=main.css.map */

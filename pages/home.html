@@ -1,0 +1,105 @@
+<!-- Barre de Recherche -->
+<div class="search-box container-fluid">
+    <h4 class="mb-4 h2">Rechercher un covoiturage</h4>
+
+    <div class="search-bar">
+
+        <div class="search-section">
+            <i class="bi bi-geo-alt"></i>
+            <input type="text" placeholder="Lieu de départ">
+        </div>
+
+        <div class="short-separator"></div>
+
+        <div class="search-section">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" placeholder="Lieu d’arrivée">
+        </div>
+
+        <div class="short-separator"></div>
+
+        <div class="search-section">
+            <i class="bi bi-calendar-week"></i>
+            <input class="date-group" type="date">
+        </div>
+
+        <div class="short-separator"></div>
+
+        <!-- Passagers -->
+        <div class="search-section passenger-dropdown">
+            <i class="bi bi-person-fill"></i>
+                <div class="passenger-label-wrapper">
+                    <span id="passenger-label" class="passenger-label">1 passager</span>
+                    <i class="bi bi-caret-down-fill dropdown-icon"></i>
+                    <ul class="passenger-options">
+                        <li class="passenger-option" data-value="1">1 passager</li>
+                        <li class="passenger-option" data-value="2">2 passagers</li>
+                        <li class="passenger-option" data-value="3">3 passagers</li>
+                        <li class="passenger-option" data-value="4">4 passagers</li>
+                        <li class="passenger-option" data-value="5">5 passagers</li>
+                        <li class="passenger-option" data-value="6">6 passagers</li>
+                        <li class="passenger-option" data-value="7">7 passagers</li>
+                    </ul>
+                </div>
+            <input type="hidden" name="passengers" id="passenger-input" value="1">
+        </div>
+            
+
+        <div class="bg-secondary h-100 btn-search-out">
+            <button type="submit" class="btn btn-search w-100 h-100">
+            <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Reste de la page -->
+<div class="container my-5">
+    <h3 class="fs-2 mb-4 pb-4 fw-bold text-center">Les avantages du covoiturage</h3>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div>
+            <img src="/asset/Image/Terre.png" alt="Terre" width="50" height="50">
+            <span class="fs-4 fw-bold">Réduction de CO₂</span>
+        </div>
+        <p>Diminuer votre empreinte<br>carbone en partageant vos<br>trajet et contribuer ainsi à<br>la préservation de notre<br>planète.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div>
+            <img src="/asset/Image/economique.png" alt="Fleur avec $" width="50" height="50">
+            <span class="fs-4 fw-bold">Économies assurées</span>
+        </div>
+        <p>Partagez les frais de transport<br>et économisez sur<br>vos déplacements quotidiens<br>ou occasionnels.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div>
+            <img src="/asset/Image/mainserrer.png" alt="Mains qui se serrent" width="50" height="50">
+            <span class="fs-4 fw-bold">Communauté engagée</span>
+        </div>
+        <p>Rejoignez une communauté<br>de covoitureurs soucieux de<br>l’environnement.</p>
+      </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="/asset/Image/VoitureoOmbre.png" alt="Voiture" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h3 class="fs-2 fw-bold">Chez EcoRide</h3>
+        <p>
+          Nous facilitons le covoiturage écologique<br>et économique en connectant les<br>conducteurs et les passagers pour des<br>trajets partager,<br>avec comme idée principal de réduire<br>notre impact.<br>Pour en savoir plus sur nous c’est par <a class="text-secondary" href="#">ici</a>.
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="text-center mb-5 footer-links">
+    <p>
+      N’hésite pas et lance toi : 
+      <a class="text-secondary" href="#">Recherche un covoiturage</a> ou 
+      <a class="text-secondary" href="#">Propose un covoiturage</a>
+    </p>
+</div>
+
